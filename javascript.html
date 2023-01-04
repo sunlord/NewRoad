@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function hideText() {
+            var mychar = document.getElementById("con");
+            mychar.style.display = "none";
+        }
+        function displayText() {
+            var mychar = document.getElementById("con");
+            mychar.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id="con">javascript是世界上最优美的语言！</p>
+    <form action="">
+        <input type="button" onclick="hideText()" value="隐藏内容">
+        <input type="button" onclick="displayText()" value="显示内容">
+    </form>
+</body>
+</html>
